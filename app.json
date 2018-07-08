@@ -1,0 +1,15 @@
+{
+  "expo": {
+  	"name": "發聲計算機",
+    "slug": "CalculationVoice",
+    "icon": "./cal.png",
+    "version": "0.1.0",
+    "sdkVersion": "27.0.0",
+    "ios": {
+      "bundleIdentifier": "com.fufuk.calculationvoice"
+    },
+    "android": {
+      "package": "com.fufuk.calculationvoice"
+    }
+  }
+}
