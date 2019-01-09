@@ -3,12 +3,13 @@
   	"name": "發聲計算機",
     "slug": "CalculationVoice",
     "icon": "./cal.png",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "sdkVersion": "27.0.0",
     "ios": {
       "bundleIdentifier": "com.fufuk.calculationvoice"
     },
     "android": {
+      "versionCode": 2,
       "package": "com.fufuk.calculationvoice"
     }
   }

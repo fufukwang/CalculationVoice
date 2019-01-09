@@ -2576,6 +2576,10 @@ expect@^22.4.0:
     jest-message-util "^22.4.3"
     jest-regex-util "^22.4.3"
 
+expo-analytics@^1.0.7:
+  version "1.0.7"
+  resolved "http://registry.npm.taobao.org/expo-analytics/download/expo-analytics-1.0.7.tgz#d78b4b9090ba359b2ec233fce35512b90ef392db"
+
 expo@^27.0.1:
   version "27.1.0"
   resolved "http://registry.npm.taobao.org/expo/download/expo-27.1.0.tgz#c8ec4a7abaf9ae96c6f2863320670e960ae2d78a"

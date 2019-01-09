@@ -10,7 +10,7 @@ import {
   Audio
 } from 'expo';
 //import SoundPlayer from 'react-native-sound-player';
-
+import { Analytics, PageHit } from 'expo-analytics';
 
 
 const inputButtons = [
@@ -20,6 +20,9 @@ const inputButtons = [
     [0, '000', '=', '+'],
     ['c','ce']
 ];
+const analytics = new Analytics('UA-126959035-1',{ cd: '發聲計算機' });
+
+
 
 export default class ReactCalculator extends Component{
   constructor(props){
@@ -32,6 +35,9 @@ export default class ReactCalculator extends Component{
       };
 
       this.state = this.initialState;
+      analytics.hit(new PageHit('發聲計算機'))
+        .then(() => console.log("success"))
+        .catch(e => console.log(e.message));
   }
 
   render(){
@@ -45,6 +51,7 @@ export default class ReactCalculator extends Component{
             </View>
             <AdMobBanner
   bannerSize="fullBanner"
+  style={{ alignItems: 'center' }}
   adUnitID="ca-app-pub-1170862681371636/9449609682"
   testDeviceID="EMULATOR"
   onDidFailToReceiveAdWithError={this.bannerError} />
